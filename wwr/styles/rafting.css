@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--accent1-color);
 }
 
 header,
@@ -54,7 +54,7 @@ article {
 }
 
 .hero {
-    color: #ffffff;
+    color: var(--accent1-color);
     position: relative;
 }
 
@@ -64,7 +64,6 @@ article {
     position: relative;
     top: 20px;
     left: 20px;
-    background-color: white;
 }
 
 .hero img {
@@ -80,7 +79,7 @@ h1 {
     padding: 16px;
     text-align: center;
     background-color: var(--secondary-color);
-    color: #ffffff;
+    color: var(--accent1-color);
     opacity: 0.9;
 }
 
@@ -91,7 +90,7 @@ h2 {
     padding: 16px;
     text-align: center;
     background-color: var(--secondary-color);
-    color: #ffffff;
+    color: var(--accent1-color);
     opacity: 0.9;
 }
 
@@ -105,7 +104,7 @@ h2 {
     opacity: 0.9;
     padding: 16px;
     border-radius: 8px;
-    color: #ffffff;
+    color: var(--accent1-color);
 }
 
 .hero article img {
