@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1d3557;
     --secondary-color: #457B9D;
-    --accent1-color: #f1faee;
+    --accent1-color: #ffffff;
     --accent2-color: #e63946;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -110,4 +110,8 @@ h2 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+footer {
+    color: var(--accent2-color);
 }
