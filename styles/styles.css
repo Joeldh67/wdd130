@@ -1,35 +1,60 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HEADER, GRID, FOOTER CENTRADOS --- */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* --- NAV --- */
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
+/* --- H1 --- */
 h1 {
-    color: darkblue;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+/* --- GRID general --- */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: start;
 }
 
-p {
-    padding: 0;
-}
-
+/* --- MAIN --- */
 main {
-    max-width: 840px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 1rem;
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 2px solid black;
@@ -37,11 +62,7 @@ main img {
     box-shadow: 0 0 20px gray;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
+/* --- ASIDE --- */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -50,10 +71,49 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 20rem;
+    position: relative;
 }
 
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
+/* --- IMÁGENES GENERALES --- */
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+/* --- PARRAFOS --- */
+p {
+    padding: 0;
+}
+
+/* --- BOX --- */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* --- FOOTER --- */
 footer {
-    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
