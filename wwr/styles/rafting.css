@@ -38,6 +38,10 @@ nav {
     text-align: right;
 }
 
+nav a {
+    text-decoration: none
+}
+
 .navigation {
     display: flex;
     list-style: none;
@@ -171,6 +175,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: var(--primary-color);
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .socialmedia {
