@@ -113,6 +113,7 @@ section {
 }
 
 .hero article {
+    float: right;
     position: absolute;
     bottom: 20px;
     left: 20px;
