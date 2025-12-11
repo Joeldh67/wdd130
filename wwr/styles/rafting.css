@@ -207,7 +207,7 @@ figcaption {
 }
 
 .contact-form {
-    background-color: #ffffff;
+    background-color: var(--accent1-color);
     padding: 20px;
     border: 1px solid #dddddd;
     border-radius: 5px;
@@ -271,7 +271,7 @@ figcaption {
 
 .employee-grid figure {
     width: 250px;
-    background: #ffffff;
+    background: var(--accent1-color);
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -316,8 +316,8 @@ figcaption {
 .grid-item {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #eee;
+    background-color: var(--accent1-color);
+    border: 1px solid #eeeeee;
     border-radius: 8px;
 }
 
@@ -364,7 +364,7 @@ figcaption {
 .newsletter-form button {
     padding: 12px 25px;
     background-color: var(--accent2-color);
-    color: white;
+    color: var(--accent1-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -385,11 +385,11 @@ figcaption {
 }
 
 .trip-card {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: white;
+    background: var(--accent1-color);
     transition: transform 0.3s;
 }
 
@@ -411,7 +411,7 @@ figcaption {
 
 .trip-card p {
     padding: 0 15px 15px 15px;
-    color: #555;
+    color: #555555;
 }
 
 /* prices table*/
@@ -428,7 +428,7 @@ figcaption {
 
 .trips-table-section th {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent1-color);
     padding: 15px;
     text-align: left;
 }
