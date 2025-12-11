@@ -1,26 +1,13 @@
-/* --- 1. Variables & Setup --- */
+/* --- Variables & Setup --- */
 :root {
-    /* Paleta Principal */
     --primary-color: #1d3557;
-    /* Azul Oscuro */
     --secondary-color: #457B9D;
-    /* Azul Claro */
     --accent1-color: #ffffff;
-    /* Blanco */
     --accent2-color: #d62828;
-    /* Rojo */
-
-    /* Colores Utilitarios (Para estandarizar y evitar warnings) */
     --text-dark: #333333;
-    /* Texto oscuro */
     --text-light: #555555;
-    /* Texto suave */
     --bg-light: #f4f4f4;
-    /* Fondos claros */
     --border-color: #cccccc;
-    /* Bordes */
-
-    /* Fuentes */
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -42,7 +29,7 @@ img {
     display: block;
 }
 
-/* --- 2. Layout Principal --- */
+/* --- main layout --- */
 header,
 main,
 footer {
@@ -64,7 +51,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-/* --- 3. Header & Navigation --- */
+/* --- Header & Navigation --- */
 header {
     background-color: var(--primary-color);
     padding: 10px 20px;
@@ -102,7 +89,7 @@ nav {
     text-decoration: underline;
 }
 
-/* --- 4. Hero Sections --- */
+/* --- Hero Sections --- */
 .hero {
     position: relative;
     margin-bottom: 40px;
@@ -119,9 +106,7 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: rgba(69, 123, 157, 0.9);
-    /* --secondary-color con alfa */
-    color: var(--accent1-color);
+    background-color: rgba(69, 123, 157, 0.9);/ color: var(--accent1-color);
     padding: 15px;
     border-radius: 5px;
     margin: 0;
@@ -132,7 +117,6 @@ nav {
     bottom: 20px;
     right: 20px;
     background-color: rgba(29, 53, 87, 0.9);
-    /* --primary-color con alfa */
     padding: 20px;
     border-radius: 5px;
     color: var(--accent1-color);
@@ -140,7 +124,6 @@ nav {
     max-width: 700px;
 }
 
-/* Requisito: Imagen flotando a la derecha */
 .hero article img {
     float: right;
     width: 100px;
@@ -149,7 +132,7 @@ nav {
     border: 2px solid var(--accent1-color);
 }
 
-/* --- 5. Grids & Layouts (Agrupados) --- */
+/* --- Grids & Layouts --- */
 .history-grid,
 .home-grid,
 .contact-content {
@@ -158,19 +141,19 @@ nav {
     align-items: center;
 }
 
-/* Grids de 3 columnas */
+/* Grid */
 .history-grid {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* Grids de 2 columnas */
+/* Grids columns */
 .home-grid,
 .contact-content {
     grid-template-columns: 1fr 1fr;
     padding: 0 20px;
 }
 
-/* Grids Flexibles (Trips & Employees) */
+/* Grids (Trips & Employees) */
 .trips-grid,
 .employee-grid {
     display: flex;
@@ -180,7 +163,7 @@ nav {
     padding: 0 20px;
 }
 
-/* Items dentro de los Grids */
+/* grid items */
 .grid-item,
 .trip-card,
 .employee-grid figure {
@@ -219,7 +202,7 @@ label {
     color: var(--primary-color);
 }
 
-/* Estilos comunes para todos los inputs */
+/* inputs */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -261,12 +244,10 @@ button:hover,
     background-color: var(--primary-color);
 }
 
-/* Botones específicos rojos (Newsletter / CTA Home) */
 .newsletter-form button,
 .cta-button {
     background-color: var(--accent2-color);
     width: auto;
-    /* No ancho completo */
     padding: 12px 30px;
 }
 
@@ -348,7 +329,7 @@ button:hover,
     border: 1px solid var(--border-color);
 }
 
-/* --- 9. Footer --- */
+/* --- Footer --- */
 footer {
     padding: 20px;
     border-top: 2px solid var(--secondary-color);
@@ -360,7 +341,6 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
-    /* Requisito */
     margin-left: 10px;
 }
 
